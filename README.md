@@ -1,2 +1,2 @@
 # autonomous-mobile-robots
-Repository of the course Autonomous Mobile Robots at ETH Zürich.
+The course repository of the class 'Autonomous Mobile Robots' at ETH Zürich.
