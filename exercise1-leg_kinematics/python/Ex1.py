@@ -177,7 +177,7 @@ for i in range(len(timeArr)):
     # controller:
     # step 1: create a simple p controller to determine the desired foot
     # point velocity
-    v = drGoal(t) + Kp * (rGoal(t) - r_BF_inB(q))
+    v = drGoal(t) + Kp * (rGoalArr[:, [i]] - rArr[:, [i]])
     # step 2: perform inverse differential kinematics to calculate the
     # generalized velocities
     dq = dq + np.linalg.pinv(J_BF_inB(q)).dot(v)
